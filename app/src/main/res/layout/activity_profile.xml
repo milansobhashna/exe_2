@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    style="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/rv_item_img"
+                android:layout_width="200dp"
+                android:layout_height="190dp"
+                android:src="@drawable/img1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/profile_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#fff"
+                    android:digits="abcdefghijklmnopqrstuvwxyz"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#000"/>
+
+
+                <EditText
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#fff"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:textColor="#000" />
+
+
+                <EditText
+                    android:id="@+id/profile_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#fff"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:maxLength="8"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/edit_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:text="edit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
